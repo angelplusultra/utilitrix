@@ -4,3 +4,4 @@ package.json
 tsconfig.json
 tsconfig.es5.json
 docs
+.changeset
