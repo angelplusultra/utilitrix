@@ -1,0 +1,1578 @@
+{
+	"id": 0,
+	"name": "utilitrix",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 9,
+			"name": "LogOpts",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Represents an object containing a key-value pair for logging purposes."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 10,
+					"name": "key",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The key for the log entry."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/misc/gigalog.ts",
+							"line": 11,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 11,
+					"name": "value",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The value associated with the key."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/misc/gigalog.ts",
+							"line": 12,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": -1,
+						"name": "LogValue",
+						"refersToTypeParameter": true
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						10,
+						11
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "modules/misc/gigalog.ts",
+					"line": 10,
+					"character": 17
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 12,
+					"name": "LogValue",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The type of the log value."
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 23,
+			"name": "Dict",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "A dictionary type representing objects with string keys and arbitrary values."
+					}
+				]
+			},
+			"sources": [
+				{
+					"fileName": "modules/array/pluck.ts",
+					"line": 5,
+					"character": 12,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L5"
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 24,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "modules/array/pluck.ts",
+							"line": 5,
+							"character": 19,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L5"
+						}
+					],
+					"indexSignature": {
+						"id": 25,
+						"name": "__index",
+						"variant": "signature",
+						"kind": 8192,
+						"flags": {},
+						"sources": [
+							{
+								"fileName": "modules/array/pluck.ts",
+								"line": 6,
+								"character": 2,
+								"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L6"
+							}
+						],
+						"parameters": [
+							{
+								"id": 26,
+								"name": "key",
+								"variant": "param",
+								"kind": 32768,
+								"flags": {},
+								"type": {
+									"type": "intrinsic",
+									"name": "string"
+								}
+							}
+						],
+						"type": {
+							"type": "intrinsic",
+							"name": "any"
+						}
+					}
+				}
+			}
+		},
+		{
+			"id": 33,
+			"name": "storage",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "modules/storage/index.ts",
+					"line": 3,
+					"character": 13
+				}
+			],
+			"type": {
+				"type": "reflection",
+				"declaration": {
+					"id": 34,
+					"name": "__type",
+					"variant": "declaration",
+					"kind": 65536,
+					"flags": {},
+					"children": [
+						{
+							"id": 35,
+							"name": "local",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "modules/storage/index.ts",
+									"line": 4,
+									"character": 1
+								}
+							],
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 36,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"children": [
+										{
+											"id": 48,
+											"name": "clear",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "modules/storage/index.ts",
+													"line": 7,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 49,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "modules/storage/localStorage.ts",
+															"line": 54,
+															"character": 16
+														}
+													],
+													"signatures": [
+														{
+															"id": 50,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "modules/storage/localStorage.ts",
+																	"line": 54,
+																	"character": 16
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 37,
+											"name": "get",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "modules/storage/index.ts",
+													"line": 5,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 38,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "modules/storage/localStorage.ts",
+															"line": 38,
+															"character": 16
+														}
+													],
+													"signatures": [
+														{
+															"id": 39,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "modules/storage/localStorage.ts",
+																	"line": 38,
+																	"character": 16
+																}
+															],
+															"typeParameter": [
+																{
+																	"id": 40,
+																	"name": "ReturnValue",
+																	"variant": "typeParam",
+																	"kind": 131072,
+																	"flags": {}
+																}
+															],
+															"parameters": [
+																{
+																	"id": 41,
+																	"name": "key",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "reference",
+																"target": -1,
+																"name": "ReturnValue",
+																"refersToTypeParameter": true
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 51,
+											"name": "remove",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "modules/storage/index.ts",
+													"line": 8,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 52,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "modules/storage/localStorage.ts",
+															"line": 49,
+															"character": 16
+														}
+													],
+													"signatures": [
+														{
+															"id": 53,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "modules/storage/localStorage.ts",
+																	"line": 49,
+																	"character": 16
+																}
+															],
+															"parameters": [
+																{
+																	"id": 54,
+																	"name": "key",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										},
+										{
+											"id": 42,
+											"name": "set",
+											"variant": "declaration",
+											"kind": 1024,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "modules/storage/index.ts",
+													"line": 6,
+													"character": 2
+												}
+											],
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 43,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "modules/storage/localStorage.ts",
+															"line": 25,
+															"character": 16
+														}
+													],
+													"signatures": [
+														{
+															"id": 44,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {},
+															"comment": {
+																"summary": [
+																	{
+																		"kind": "text",
+																		"text": "Sets a key-value pair in the browser's local storage."
+																	}
+																],
+																"blockTags": [
+																	{
+																		"tag": "@returns",
+																		"content": []
+																	},
+																	{
+																		"tag": "@throws",
+																		"content": [
+																			{
+																				"kind": "text",
+																				"text": "Throws an error if not running in a browser environment."
+																			}
+																		]
+																	}
+																]
+															},
+															"sources": [
+																{
+																	"fileName": "modules/storage/localStorage.ts",
+																	"line": 25,
+																	"character": 16
+																}
+															],
+															"typeParameter": [
+																{
+																	"id": 45,
+																	"name": "T",
+																	"variant": "typeParam",
+																	"kind": 131072,
+																	"flags": {},
+																	"comment": {
+																		"summary": [
+																			{
+																				"kind": "text",
+																				"text": "The type of the value being stored."
+																			}
+																		]
+																	}
+																}
+															],
+															"parameters": [
+																{
+																	"id": 46,
+																	"name": "key",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {},
+																	"comment": {
+																		"summary": [
+																			{
+																				"kind": "text",
+																				"text": "The key to use for storage."
+																			}
+																		]
+																	},
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																},
+																{
+																	"id": 47,
+																	"name": "value",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {},
+																	"comment": {
+																		"summary": [
+																			{
+																				"kind": "text",
+																				"text": "The value to be stored in local storage."
+																			}
+																		]
+																	},
+																	"type": {
+																		"type": "reference",
+																		"target": -1,
+																		"name": "T",
+																		"refersToTypeParameter": true
+																	}
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "void"
+															}
+														}
+													]
+												}
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Properties",
+											"children": [
+												48,
+												37,
+												51,
+												42
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "modules/storage/index.ts",
+											"line": 4,
+											"character": 8
+										}
+									]
+								}
+							},
+							"defaultValue": "..."
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [
+								35
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modules/storage/index.ts",
+							"line": 3,
+							"character": 23
+						}
+					]
+				}
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 1,
+			"name": "delay",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/misc/delay.ts",
+					"line": 16,
+					"character": 16,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/misc/delay.ts#L16"
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "delay",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Delays the execution of code by a specified number of milliseconds."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nasync function delayedFunction() {\n  console.log(\"Start\");\n  await delay(2000); // Wait for 2 seconds\n  console.log(\"End\"); // This will be executed after the delay\n}\n\ndelayedFunction();\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/misc/delay.ts",
+							"line": 16,
+							"character": 16,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/misc/delay.ts#L16"
+						}
+					],
+					"parameters": [
+						{
+							"id": 3,
+							"name": "ms",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The delay time in milliseconds."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "void"
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "gigalog",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/misc/gigalog.ts",
+					"line": 31,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 5,
+					"name": "gigalog",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Logs a key-value pair or a single value for debugging or logging purposes."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\n// Logging a key-value pair\nconst logEntry = { key: \"UserID\", value: 123 };\ngigalog(logEntry);\n\n// Logging a single value with a custom key\ngigalog(\"Status\", \"StatusCode\");\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/misc/gigalog.ts",
+							"line": 31,
+							"character": 16
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 6,
+							"name": "LogValue",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The type of the log value."
+									}
+								]
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 7,
+							"name": "opts",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "An object with a key-value pair or a single value to log."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "LogValue",
+										"refersToTypeParameter": true
+									},
+									{
+										"type": "reference",
+										"target": 9,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "LogValue",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "LogOpts",
+										"package": "utilitrix"
+									}
+								]
+							}
+						},
+						{
+							"id": 8,
+							"name": "key",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The key to use for the log entry if "
+									},
+									{
+										"kind": "code",
+										"text": "`opts`"
+									},
+									{
+										"kind": "text",
+										"text": " is a single value."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\"Key\""
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "void"
+					}
+				}
+			]
+		},
+		{
+			"id": 27,
+			"name": "isEven",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/number/isEven.ts",
+					"line": 14,
+					"character": 16,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/number/isEven.ts#L14"
+				}
+			],
+			"signatures": [
+				{
+					"id": 28,
+					"name": "isEven",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Takes a number and returns true if the number is even and false if it is odd"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "boolean value on whether the number is even"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nconst num = 8\nisEven(num) -> true\n\nconst num = 5\nisEven(num) -> false\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/number/isEven.ts",
+							"line": 14,
+							"character": 16,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/number/isEven.ts#L14"
+						}
+					],
+					"parameters": [
+						{
+							"id": 29,
+							"name": "number",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The number to evaluate"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			]
+		},
+		{
+			"id": 17,
+			"name": "pluck",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/array/pluck.ts",
+					"line": 41,
+					"character": 16,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L41"
+				}
+			],
+			"signatures": [
+				{
+					"id": 18,
+					"name": "pluck",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Plucks a specific property from an array of objects and returns an array\ncontaining the values of that property."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@throws",
+								"content": [
+									{
+										"kind": "text",
+										"text": "If the input array is empty."
+									}
+								]
+							},
+							{
+								"tag": "@throws",
+								"content": [
+									{
+										"kind": "text",
+										"text": "If the first object in the array has no keys."
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "An array containing the values of the specified property\nfrom each object in the input array."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\n// Example usage:\nconst data = [\n  { id: 1, name: 'Alice' },\n  { id: 2, name: 'Bob' },\n  { id: 3, name: 'Charlie' },\n];\n\nconst ids = pluck(data, 'id');\n// Result: [1, 2, 3]\n\nconst names = pluck(data, 'name');\n// Result: ['Alice', 'Bob', 'Charlie']\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/array/pluck.ts",
+							"line": 41,
+							"character": 16,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L41"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 19,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The type of objects in the input array."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": 23,
+								"name": "Dict",
+								"package": "utilitrix"
+							}
+						},
+						{
+							"id": 20,
+							"name": "K",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The type of property key to pluck from the objects."
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									},
+									{
+										"type": "intrinsic",
+										"name": "symbol"
+									}
+								]
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 21,
+							"name": "arr",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The input array of objects."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": -1,
+									"name": "T",
+									"refersToTypeParameter": true
+								}
+							}
+						},
+						{
+							"id": 22,
+							"name": "key",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The property key to pluck from each object."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "K",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "indexedAccess",
+							"indexType": {
+								"type": "reference",
+								"target": -1,
+								"name": "K",
+								"refersToTypeParameter": true
+							},
+							"objectType": {
+								"type": "reference",
+								"target": -1,
+								"name": "T",
+								"refersToTypeParameter": true
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "random",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/array/random.ts",
+					"line": 10,
+					"character": 16,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/random.ts#L10"
+				}
+			],
+			"signatures": [
+				{
+					"id": 14,
+					"name": "random",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Selects a random element from an array."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@throws",
+								"content": [
+									{
+										"kind": "text",
+										"text": "If the input array is empty."
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nconst colors = [\"red\", \"blue\", \"green\", \"yellow\"];\nconst randomColor = random(colors); // Returns a random color from the array.\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/array/random.ts",
+							"line": 10,
+							"character": 16,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/random.ts#L10"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 15,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 16,
+							"name": "arr",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The array from which to select a random element."
+									}
+								]
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": -1,
+									"name": "T",
+									"refersToTypeParameter": true
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": -1,
+						"name": "T",
+						"refersToTypeParameter": true
+					}
+				}
+			]
+		},
+		{
+			"id": 30,
+			"name": "titleCase",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/string/titleCase.ts",
+					"line": 10,
+					"character": 16,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/string/titleCase.ts#L10"
+				}
+			],
+			"signatures": [
+				{
+					"id": 31,
+					"name": "titleCase",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Capitalizes the first letter of each word in a string, except for specified minor words."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "The input string title-cased"
+									}
+								]
+							},
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nconst input = \"the lord of the rings\";\nconst result = titleCase(input); // Returns \"The Lord of the Rings\"\n```"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "modules/string/titleCase.ts",
+							"line": 10,
+							"character": 16,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/string/titleCase.ts#L10"
+						}
+					],
+					"parameters": [
+						{
+							"id": 32,
+							"name": "str",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The input string to be title-cased."
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"children": [
+				9
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				23
+			]
+		},
+		{
+			"title": "Variables",
+			"children": [
+				33
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				1,
+				4,
+				27,
+				17,
+				13,
+				30
+			]
+		}
+	],
+	"categories": [
+		{
+			"title": "Arrays",
+			"children": [
+				17
+			]
+		},
+		{
+			"title": "Misc",
+			"children": [
+				9,
+				4
+			]
+		},
+		{
+			"title": "Other",
+			"children": [
+				23,
+				33,
+				1,
+				27,
+				13,
+				30
+			]
+		}
+	],
+	"packageName": "utilitrix",
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/modules/misc/delay.ts",
+			"qualifiedName": "delay"
+		},
+		"2": {
+			"sourceFileName": "src/modules/misc/delay.ts",
+			"qualifiedName": "delay"
+		},
+		"3": {
+			"sourceFileName": "src/modules/misc/delay.ts",
+			"qualifiedName": "ms"
+		},
+		"4": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "gigalog"
+		},
+		"5": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "gigalog"
+		},
+		"6": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "LogValue"
+		},
+		"7": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "opts"
+		},
+		"8": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "key"
+		},
+		"9": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "LogOpts"
+		},
+		"10": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "LogOpts.key"
+		},
+		"11": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "LogOpts.value"
+		},
+		"12": {
+			"sourceFileName": "src/modules/misc/gigalog.ts",
+			"qualifiedName": "LogOpts.LogValue"
+		},
+		"13": {
+			"sourceFileName": "src/modules/array/random.ts",
+			"qualifiedName": "random"
+		},
+		"14": {
+			"sourceFileName": "src/modules/array/random.ts",
+			"qualifiedName": "random"
+		},
+		"15": {
+			"sourceFileName": "src/modules/array/random.ts",
+			"qualifiedName": "T"
+		},
+		"16": {
+			"sourceFileName": "src/modules/array/random.ts",
+			"qualifiedName": "arr"
+		},
+		"17": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "pluck"
+		},
+		"18": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "pluck"
+		},
+		"19": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "T"
+		},
+		"20": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "K"
+		},
+		"21": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "arr"
+		},
+		"22": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "key"
+		},
+		"23": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "Dict"
+		},
+		"24": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "__type"
+		},
+		"25": {
+			"sourceFileName": "src/modules/array/pluck.ts",
+			"qualifiedName": "__type.__index"
+		},
+		"27": {
+			"sourceFileName": "src/modules/number/isEven.ts",
+			"qualifiedName": "isEven"
+		},
+		"28": {
+			"sourceFileName": "src/modules/number/isEven.ts",
+			"qualifiedName": "isEven"
+		},
+		"29": {
+			"sourceFileName": "src/modules/number/isEven.ts",
+			"qualifiedName": "number"
+		},
+		"30": {
+			"sourceFileName": "src/modules/string/titleCase.ts",
+			"qualifiedName": "titleCase"
+		},
+		"31": {
+			"sourceFileName": "src/modules/string/titleCase.ts",
+			"qualifiedName": "titleCase"
+		},
+		"32": {
+			"sourceFileName": "src/modules/string/titleCase.ts",
+			"qualifiedName": "str"
+		},
+		"33": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "storage"
+		},
+		"34": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object"
+		},
+		"35": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.local"
+		},
+		"36": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object"
+		},
+		"37": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.get"
+		},
+		"38": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "get"
+		},
+		"39": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "get"
+		},
+		"40": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "ReturnValue"
+		},
+		"41": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "key"
+		},
+		"42": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.set"
+		},
+		"43": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "set"
+		},
+		"44": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "set"
+		},
+		"45": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "T"
+		},
+		"46": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "key"
+		},
+		"47": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "value"
+		},
+		"48": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.clear"
+		},
+		"49": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "clear"
+		},
+		"50": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "clear"
+		},
+		"51": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.remove"
+		},
+		"52": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "remove"
+		},
+		"53": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "remove"
+		},
+		"54": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "key"
+		}
+	}
+}

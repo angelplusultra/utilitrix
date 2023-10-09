@@ -3,3 +3,4 @@ node_modules
 package.json
 tsconfig.json
 tsconfig.es5.json
+docs
