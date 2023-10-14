@@ -1,6 +1,6 @@
 {
   "name": "utilitrix",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "dist/lib/es5/index.js",
   "module": "dist/lib/es6/index.js",

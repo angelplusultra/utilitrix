@@ -8,17 +8,23 @@
 
 - [ExistsReturn](interfaces/ExistsReturn.md)
 - [LogOpts](interfaces/LogOpts.md)
+- [NormalMode](interfaces/NormalMode.md)
+- [PrecisionMode](interfaces/PrecisionMode.md)
+- [WholeMode](interfaces/WholeMode.md)
 
 ### Type Aliases
 
 - [Dict](modules.md#dict)
+- [TotalizeOpts](modules.md#totalizeopts)
 
 ### Variables
 
+- [homeDir](modules.md#homedir)
 - [storage](modules.md#storage)
 
 ### Functions
 
+- [cloneDir](modules.md#clonedir)
 - [delay](modules.md#delay)
 - [exists](modules.md#exists)
 - [gigalog](modules.md#gigalog)
@@ -85,7 +91,7 @@ const names = pluck(data, 'name');
 
 #### Defined in
 
-[modules/array/pluck.ts:41](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/pluck.ts#L41)
+[modules/array/pluck.ts:41](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/array/pluck.ts#L41)
 
 ## Misc
 
@@ -125,7 +131,7 @@ gigalog("Status", "StatusCode");
 
 #### Defined in
 
-[modules/misc/gigalog.ts:31](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/misc/gigalog.ts#L31)
+[modules/misc/gigalog.ts:31](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/misc/gigalog.ts#L31)
 
 ## Other
 
@@ -141,7 +147,39 @@ A dictionary type representing objects with string keys and arbitrary values.
 
 #### Defined in
 
-[modules/array/pluck.ts:5](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/pluck.ts#L5)
+[modules/array/pluck.ts:5](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/array/pluck.ts#L5)
+
+___
+
+### TotalizeOpts
+
+Ƭ **TotalizeOpts**: [`PrecisionMode`](interfaces/PrecisionMode.md) \| [`WholeMode`](interfaces/WholeMode.md) \| [`NormalMode`](interfaces/NormalMode.md)
+
+Calculates the total sum of a variable number of numeric values.
+
+**`Param`**
+
+The numeric values to be summed.
+
+**`Example`**
+
+```ts
+const result = totalize(1, 2, 3); // Result: 6
+```
+
+#### Defined in
+
+[modules/number/totalize.ts:10](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/number/totalize.ts#L10)
+
+___
+
+### homeDir
+
+• `Const` **homeDir**: `undefined` \| `string`
+
+#### Defined in
+
+modules/fs/constants.ts:1
 
 ___
 
@@ -161,7 +199,44 @@ ___
 
 #### Defined in
 
-[modules/storage/index.ts:3](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/storage/index.ts#L3)
+[modules/storage/index.ts:3](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/storage/index.ts#L3)
+
+___
+
+### cloneDir
+
+▸ **cloneDir**(`source`, `dest`): `void`
+
+Recursively clones the contents of a directory from the source path to the destination path.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `source` | `string` | The source directory path to be cloned. |
+| `dest` | `string` | The destination directory path where the source directory contents will be copied. |
+
+#### Returns
+
+`void`
+
+**`Remarks`**
+
+This function copies all the files and subdirectories from the source directory to the destination directory.
+
+**`Throws`**
+
+Throws an error if the source directory does not exist.
+
+**`Example`**
+
+```typescript
+cloneDir('/path/to/source', '/path/to/destination');
+```
+
+#### Defined in
+
+modules/fs/functions.ts:19
 
 ___
 
@@ -195,7 +270,7 @@ delayedFunction();
 
 #### Defined in
 
-[modules/misc/delay.ts:16](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/misc/delay.ts#L16)
+[modules/misc/delay.ts:16](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/misc/delay.ts#L16)
 
 ___
 
@@ -243,7 +318,7 @@ const result = exists(array, "name", "Bob");
 
 #### Defined in
 
-[modules/array/exists.ts:29](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/exists.ts#L29)
+[modules/array/exists.ts:29](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/array/exists.ts#L29)
 
 ___
 
@@ -277,7 +352,7 @@ isEven(num) -> false
 
 #### Defined in
 
-[modules/number/isEven.ts:14](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/number/isEven.ts#L14)
+[modules/number/isEven.ts:14](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/number/isEven.ts#L14)
 
 ___
 
@@ -316,7 +391,7 @@ const randomColor = random(colors); // Returns a random color from the array.
 
 #### Defined in
 
-[modules/array/random.ts:10](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/random.ts#L10)
+[modules/array/random.ts:10](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/array/random.ts#L10)
 
 ___
 
@@ -347,7 +422,7 @@ const result = titleCase(input); // Returns "The Lord of the Rings"
 
 #### Defined in
 
-[modules/string/titleCase.ts:10](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/string/titleCase.ts#L10)
+[modules/string/titleCase.ts:10](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/string/titleCase.ts#L10)
 
 ___
 
@@ -360,7 +435,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `nums` | `number`[] |
-| `opts` | `TotalizeOpts` |
+| `opts` | [`TotalizeOpts`](modules.md#totalizeopts) |
 
 #### Returns
 
@@ -368,4 +443,4 @@ ___
 
 #### Defined in
 
-[modules/number/totalize.ts:31](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/number/totalize.ts#L31)
+[modules/number/totalize.ts:23](https://github.com/angelplusultra/utilitrix/blob/9d73b51/src/modules/number/totalize.ts#L23)

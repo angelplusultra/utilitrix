@@ -7,27 +7,19 @@
  * @example
  * const result = totalize(1, 2, 3); // Result: 6
  */
-type TotalizeOpts = PrecisionMode | WholeMode | NormalMode
+export type TotalizeOpts = PrecisionMode | WholeMode | NormalMode
 
-interface PrecisionMode {
+export interface PrecisionMode {
 	mode: 'precision'
 	precision: number
 }
-interface WholeMode {
+export interface WholeMode {
 	mode: 'whole';
 	round: 'floor' | 'ceil' | 'round'
 }
-interface NormalMode {
+export interface NormalMode {
 	mode: 'normal'
 }
-// type TotalizeOpts = {
-// 	mode: 'precision'
-// 	precision: number
-// } | {
-// 	mode: 'whole';
-// 	round: 'up' | 'down'
-//
-// }
 export function totalize(nums: number[], opts: TotalizeOpts = {
 	mode: 'normal'
 }): number {
