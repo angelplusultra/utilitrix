@@ -23,7 +23,7 @@
 
 #### Defined in
 
-modules/array/exists.ts:4
+[modules/array/exists.ts:4](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/exists.ts#L4)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-modules/array/exists.ts:5
+[modules/array/exists.ts:5](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/exists.ts#L5)

@@ -85,7 +85,7 @@ const names = pluck(data, 'name');
 
 #### Defined in
 
-[modules/array/pluck.ts:41](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L41)
+[modules/array/pluck.ts:41](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/pluck.ts#L41)
 
 ## Misc
 
@@ -125,7 +125,7 @@ gigalog("Status", "StatusCode");
 
 #### Defined in
 
-[modules/misc/gigalog.ts:31](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L31)
+[modules/misc/gigalog.ts:31](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/misc/gigalog.ts#L31)
 
 ## Other
 
@@ -141,7 +141,7 @@ A dictionary type representing objects with string keys and arbitrary values.
 
 #### Defined in
 
-[modules/array/pluck.ts:5](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L5)
+[modules/array/pluck.ts:5](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/pluck.ts#L5)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[modules/storage/index.ts:3](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L3)
+[modules/storage/index.ts:3](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/storage/index.ts#L3)
 
 ___
 
@@ -195,13 +195,15 @@ delayedFunction();
 
 #### Defined in
 
-[modules/misc/delay.ts:16](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/delay.ts#L16)
+[modules/misc/delay.ts:16](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/misc/delay.ts#L16)
 
 ___
 
 ### exists
 
 ▸ **exists**<`ValueType`, `K`, `V`\>(`array`, `key`, `value`): [`ExistsReturn`](interfaces/ExistsReturn.md)<`ValueType`\>
+
+Determines if an element with a specific key-value pair exists in an array of objects.
 
 #### Type parameters
 
@@ -213,19 +215,35 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `array` | `ValueType`[] |
-| `key` | `K` |
-| `value` | `V` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `ValueType`[] | The array of objects to search. |
+| `key` | `K` | The key to match against the value. |
+| `value` | `V` | The value to search for within the array. |
 
 #### Returns
 
 [`ExistsReturn`](interfaces/ExistsReturn.md)<`ValueType`\>
 
+An `ExistsReturn` object containing information about the existence and the matching element.
+
+**`Example`**
+
+```typescript
+const array = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 35 },
+];
+
+// Check if an element with 'name' equal to 'Bob' exists in the array
+const result = exists(array, "name", "Bob");
+// result.exists is true, and result.element contains the matching object.
+```
+
 #### Defined in
 
-modules/array/exists.ts:7
+[modules/array/exists.ts:29](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/exists.ts#L29)
 
 ___
 
@@ -259,7 +277,7 @@ isEven(num) -> false
 
 #### Defined in
 
-[modules/number/isEven.ts:14](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/number/isEven.ts#L14)
+[modules/number/isEven.ts:14](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/number/isEven.ts#L14)
 
 ___
 
@@ -298,7 +316,7 @@ const randomColor = random(colors); // Returns a random color from the array.
 
 #### Defined in
 
-[modules/array/random.ts:10](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/random.ts#L10)
+[modules/array/random.ts:10](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/array/random.ts#L10)
 
 ___
 
@@ -329,7 +347,7 @@ const result = titleCase(input); // Returns "The Lord of the Rings"
 
 #### Defined in
 
-[modules/string/titleCase.ts:10](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/string/titleCase.ts#L10)
+[modules/string/titleCase.ts:10](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/string/titleCase.ts#L10)
 
 ___
 
@@ -350,4 +368,4 @@ ___
 
 #### Defined in
 
-modules/number/totalize.ts:31
+[modules/number/totalize.ts:31](https://github.com/angelplusultra/utilitrix/blob/1819241/src/modules/number/totalize.ts#L31)
