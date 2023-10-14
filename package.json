@@ -1,12 +1,12 @@
 {
   "name": "utilitrix",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "dist/es5/index.js",
   "module": "dist/es6/index.js",
   "scripts": {
     "test": "jest",
-    "build": "rm -rf ./dist && tsc && tsc --build tsconfig.es5.json",
+    "build": "rm -rf ./dist/lib && tsc && tsc --build tsconfig.es5.json",
     "build-docs": "npx typedoc --out ./docs --json ./docs/typedoc.json ./src && typedoc --plugin typedoc-plugin-markdown --out docs/md src/index.ts",
     "dev": "ts-node"
   },

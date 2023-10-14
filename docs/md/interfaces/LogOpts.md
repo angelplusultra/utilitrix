@@ -27,7 +27,7 @@ The key for the log entry.
 
 #### Defined in
 
-modules/misc/gigalog.ts:11
+[modules/misc/gigalog.ts:11](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L11)
 
 ___
 
@@ -39,4 +39,4 @@ The value associated with the key.
 
 #### Defined in
 
-modules/misc/gigalog.ts:12
+[modules/misc/gigalog.ts:12](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L12)

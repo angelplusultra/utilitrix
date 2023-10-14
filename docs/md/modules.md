@@ -6,6 +6,7 @@
 
 ### Interfaces
 
+- [ExistsReturn](interfaces/ExistsReturn.md)
 - [LogOpts](interfaces/LogOpts.md)
 
 ### Type Aliases
@@ -19,11 +20,13 @@
 ### Functions
 
 - [delay](modules.md#delay)
+- [exists](modules.md#exists)
 - [gigalog](modules.md#gigalog)
 - [isEven](modules.md#iseven)
 - [pluck](modules.md#pluck)
 - [random](modules.md#random)
 - [titleCase](modules.md#titlecase)
+- [totalize](modules.md#totalize)
 
 ## Arrays
 
@@ -82,7 +85,7 @@ const names = pluck(data, 'name');
 
 #### Defined in
 
-[modules/array/pluck.ts:41](https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L41)
+[modules/array/pluck.ts:41](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L41)
 
 ## Misc
 
@@ -122,7 +125,7 @@ gigalog("Status", "StatusCode");
 
 #### Defined in
 
-modules/misc/gigalog.ts:31
+[modules/misc/gigalog.ts:31](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L31)
 
 ## Other
 
@@ -138,7 +141,7 @@ A dictionary type representing objects with string keys and arbitrary values.
 
 #### Defined in
 
-[modules/array/pluck.ts:5](https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L5)
+[modules/array/pluck.ts:5](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L5)
 
 ___
 
@@ -158,7 +161,7 @@ ___
 
 #### Defined in
 
-modules/storage/index.ts:3
+[modules/storage/index.ts:3](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L3)
 
 ___
 
@@ -192,7 +195,37 @@ delayedFunction();
 
 #### Defined in
 
-[modules/misc/delay.ts:16](https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/misc/delay.ts#L16)
+[modules/misc/delay.ts:16](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/delay.ts#L16)
+
+___
+
+### exists
+
+▸ **exists**<`ValueType`, `K`, `V`\>(`array`, `key`, `value`): [`ExistsReturn`](interfaces/ExistsReturn.md)<`ValueType`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `ValueType` | extends [`Dict`](modules.md#dict) |
+| `K` | extends `string` \| `number` \| `symbol` |
+| `V` | `V` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `array` | `ValueType`[] |
+| `key` | `K` |
+| `value` | `V` |
+
+#### Returns
+
+[`ExistsReturn`](interfaces/ExistsReturn.md)<`ValueType`\>
+
+#### Defined in
+
+modules/array/exists.ts:7
 
 ___
 
@@ -226,7 +259,7 @@ isEven(num) -> false
 
 #### Defined in
 
-[modules/number/isEven.ts:14](https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/number/isEven.ts#L14)
+[modules/number/isEven.ts:14](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/number/isEven.ts#L14)
 
 ___
 
@@ -265,7 +298,7 @@ const randomColor = random(colors); // Returns a random color from the array.
 
 #### Defined in
 
-[modules/array/random.ts:10](https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/random.ts#L10)
+[modules/array/random.ts:10](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/random.ts#L10)
 
 ___
 
@@ -296,4 +329,25 @@ const result = titleCase(input); // Returns "The Lord of the Rings"
 
 #### Defined in
 
-[modules/string/titleCase.ts:10](https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/string/titleCase.ts#L10)
+[modules/string/titleCase.ts:10](https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/string/titleCase.ts#L10)
+
+___
+
+### totalize
+
+▸ **totalize**(`nums`, `opts?`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `nums` | `number`[] |
+| `opts` | `TotalizeOpts` |
+
+#### Returns
+
+`number`
+
+#### Defined in
+
+modules/number/totalize.ts:31

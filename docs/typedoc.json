@@ -6,6 +6,87 @@
 	"flags": {},
 	"children": [
 		{
+			"id": 35,
+			"name": "ExistsReturn",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 36,
+					"name": "element",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "modules/array/exists.ts",
+							"line": 4,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "T",
+								"refersToTypeParameter": true
+							}
+						]
+					}
+				},
+				{
+					"id": 37,
+					"name": "exists",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "modules/array/exists.ts",
+							"line": 5,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						36,
+						37
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "modules/array/exists.ts",
+					"line": 3,
+					"character": 17
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 38,
+					"name": "T",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {}
+				}
+			]
+		},
+		{
 			"id": 9,
 			"name": "LogOpts",
 			"variant": "declaration",
@@ -40,7 +121,8 @@
 						{
 							"fileName": "modules/misc/gigalog.ts",
 							"line": 11,
-							"character": 2
+							"character": 2,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L11"
 						}
 					],
 					"type": {
@@ -66,7 +148,8 @@
 						{
 							"fileName": "modules/misc/gigalog.ts",
 							"line": 12,
-							"character": 2
+							"character": 2,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L12"
 						}
 					],
 					"type": {
@@ -90,7 +173,8 @@
 				{
 					"fileName": "modules/misc/gigalog.ts",
 					"line": 10,
-					"character": 17
+					"character": 17,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L10"
 				}
 			],
 			"typeParameters": [
@@ -130,7 +214,7 @@
 					"fileName": "modules/array/pluck.ts",
 					"line": 5,
 					"character": 12,
-					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L5"
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L5"
 				}
 			],
 			"type": {
@@ -146,7 +230,7 @@
 							"fileName": "modules/array/pluck.ts",
 							"line": 5,
 							"character": 19,
-							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L5"
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L5"
 						}
 					],
 					"indexSignature": {
@@ -160,7 +244,7 @@
 								"fileName": "modules/array/pluck.ts",
 								"line": 6,
 								"character": 2,
-								"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L6"
+								"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L6"
 							}
 						],
 						"parameters": [
@@ -185,7 +269,7 @@
 			}
 		},
 		{
-			"id": 33,
+			"id": 49,
 			"name": "storage",
 			"variant": "declaration",
 			"kind": 32,
@@ -196,20 +280,21 @@
 				{
 					"fileName": "modules/storage/index.ts",
 					"line": 3,
-					"character": 13
+					"character": 13,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L3"
 				}
 			],
 			"type": {
 				"type": "reflection",
 				"declaration": {
-					"id": 34,
+					"id": 50,
 					"name": "__type",
 					"variant": "declaration",
 					"kind": 65536,
 					"flags": {},
 					"children": [
 						{
-							"id": 35,
+							"id": 51,
 							"name": "local",
 							"variant": "declaration",
 							"kind": 1024,
@@ -218,20 +303,21 @@
 								{
 									"fileName": "modules/storage/index.ts",
 									"line": 4,
-									"character": 1
+									"character": 1,
+									"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L4"
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 36,
+									"id": 52,
 									"name": "__type",
 									"variant": "declaration",
 									"kind": 65536,
 									"flags": {},
 									"children": [
 										{
-											"id": 48,
+											"id": 64,
 											"name": "clear",
 											"variant": "declaration",
 											"kind": 1024,
@@ -240,13 +326,14 @@
 												{
 													"fileName": "modules/storage/index.ts",
 													"line": 7,
-													"character": 2
+													"character": 2,
+													"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L7"
 												}
 											],
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 49,
+													"id": 65,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
@@ -255,12 +342,13 @@
 														{
 															"fileName": "modules/storage/localStorage.ts",
 															"line": 54,
-															"character": 16
+															"character": 16,
+															"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L54"
 														}
 													],
 													"signatures": [
 														{
-															"id": 50,
+															"id": 66,
 															"name": "__type",
 															"variant": "signature",
 															"kind": 4096,
@@ -269,7 +357,8 @@
 																{
 																	"fileName": "modules/storage/localStorage.ts",
 																	"line": 54,
-																	"character": 16
+																	"character": 16,
+																	"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L54"
 																}
 															],
 															"type": {
@@ -282,7 +371,7 @@
 											}
 										},
 										{
-											"id": 37,
+											"id": 53,
 											"name": "get",
 											"variant": "declaration",
 											"kind": 1024,
@@ -291,13 +380,14 @@
 												{
 													"fileName": "modules/storage/index.ts",
 													"line": 5,
-													"character": 2
+													"character": 2,
+													"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L5"
 												}
 											],
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 38,
+													"id": 54,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
@@ -306,12 +396,13 @@
 														{
 															"fileName": "modules/storage/localStorage.ts",
 															"line": 38,
-															"character": 16
+															"character": 16,
+															"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L38"
 														}
 													],
 													"signatures": [
 														{
-															"id": 39,
+															"id": 55,
 															"name": "__type",
 															"variant": "signature",
 															"kind": 4096,
@@ -320,12 +411,13 @@
 																{
 																	"fileName": "modules/storage/localStorage.ts",
 																	"line": 38,
-																	"character": 16
+																	"character": 16,
+																	"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L38"
 																}
 															],
 															"typeParameter": [
 																{
-																	"id": 40,
+																	"id": 56,
 																	"name": "ReturnValue",
 																	"variant": "typeParam",
 																	"kind": 131072,
@@ -334,7 +426,7 @@
 															],
 															"parameters": [
 																{
-																	"id": 41,
+																	"id": 57,
 																	"name": "key",
 																	"variant": "param",
 																	"kind": 32768,
@@ -357,7 +449,7 @@
 											}
 										},
 										{
-											"id": 51,
+											"id": 67,
 											"name": "remove",
 											"variant": "declaration",
 											"kind": 1024,
@@ -366,13 +458,14 @@
 												{
 													"fileName": "modules/storage/index.ts",
 													"line": 8,
-													"character": 2
+													"character": 2,
+													"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L8"
 												}
 											],
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 52,
+													"id": 68,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
@@ -381,12 +474,13 @@
 														{
 															"fileName": "modules/storage/localStorage.ts",
 															"line": 49,
-															"character": 16
+															"character": 16,
+															"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L49"
 														}
 													],
 													"signatures": [
 														{
-															"id": 53,
+															"id": 69,
 															"name": "__type",
 															"variant": "signature",
 															"kind": 4096,
@@ -395,12 +489,13 @@
 																{
 																	"fileName": "modules/storage/localStorage.ts",
 																	"line": 49,
-																	"character": 16
+																	"character": 16,
+																	"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L49"
 																}
 															],
 															"parameters": [
 																{
-																	"id": 54,
+																	"id": 70,
 																	"name": "key",
 																	"variant": "param",
 																	"kind": 32768,
@@ -421,7 +516,7 @@
 											}
 										},
 										{
-											"id": 42,
+											"id": 58,
 											"name": "set",
 											"variant": "declaration",
 											"kind": 1024,
@@ -430,13 +525,14 @@
 												{
 													"fileName": "modules/storage/index.ts",
 													"line": 6,
-													"character": 2
+													"character": 2,
+													"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L6"
 												}
 											],
 											"type": {
 												"type": "reflection",
 												"declaration": {
-													"id": 43,
+													"id": 59,
 													"name": "__type",
 													"variant": "declaration",
 													"kind": 65536,
@@ -445,12 +541,13 @@
 														{
 															"fileName": "modules/storage/localStorage.ts",
 															"line": 25,
-															"character": 16
+															"character": 16,
+															"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L25"
 														}
 													],
 													"signatures": [
 														{
-															"id": 44,
+															"id": 60,
 															"name": "__type",
 															"variant": "signature",
 															"kind": 4096,
@@ -482,12 +579,13 @@
 																{
 																	"fileName": "modules/storage/localStorage.ts",
 																	"line": 25,
-																	"character": 16
+																	"character": 16,
+																	"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/localStorage.ts#L25"
 																}
 															],
 															"typeParameter": [
 																{
-																	"id": 45,
+																	"id": 61,
 																	"name": "T",
 																	"variant": "typeParam",
 																	"kind": 131072,
@@ -504,7 +602,7 @@
 															],
 															"parameters": [
 																{
-																	"id": 46,
+																	"id": 62,
 																	"name": "key",
 																	"variant": "param",
 																	"kind": 32768,
@@ -523,7 +621,7 @@
 																	}
 																},
 																{
-																	"id": 47,
+																	"id": 63,
 																	"name": "value",
 																	"variant": "param",
 																	"kind": 32768,
@@ -558,10 +656,10 @@
 										{
 											"title": "Properties",
 											"children": [
-												48,
-												37,
-												51,
-												42
+												64,
+												53,
+												67,
+												58
 											]
 										}
 									],
@@ -569,7 +667,8 @@
 										{
 											"fileName": "modules/storage/index.ts",
 											"line": 4,
-											"character": 8
+											"character": 8,
+											"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L4"
 										}
 									]
 								}
@@ -581,7 +680,7 @@
 						{
 							"title": "Properties",
 							"children": [
-								35
+								51
 							]
 						}
 					],
@@ -589,7 +688,8 @@
 						{
 							"fileName": "modules/storage/index.ts",
 							"line": 3,
-							"character": 23
+							"character": 23,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/storage/index.ts#L3"
 						}
 					]
 				}
@@ -607,7 +707,7 @@
 					"fileName": "modules/misc/delay.ts",
 					"line": 16,
 					"character": 16,
-					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/misc/delay.ts#L16"
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/delay.ts#L16"
 				}
 			],
 			"signatures": [
@@ -645,7 +745,7 @@
 							"fileName": "modules/misc/delay.ts",
 							"line": 16,
 							"character": 16,
-							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/misc/delay.ts#L16"
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/delay.ts#L16"
 						}
 					],
 					"parameters": [
@@ -688,6 +788,140 @@
 			]
 		},
 		{
+			"id": 27,
+			"name": "exists",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/array/exists.ts",
+					"line": 7,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 28,
+					"name": "exists",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "modules/array/exists.ts",
+							"line": 7,
+							"character": 16
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 29,
+							"name": "ValueType",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 23,
+								"name": "Dict",
+								"package": "utilitrix"
+							}
+						},
+						{
+							"id": 30,
+							"name": "K",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									},
+									{
+										"type": "intrinsic",
+										"name": "symbol"
+									}
+								]
+							}
+						},
+						{
+							"id": 31,
+							"name": "V",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 32,
+							"name": "array",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": -1,
+									"name": "ValueType",
+									"refersToTypeParameter": true
+								}
+							}
+						},
+						{
+							"id": 33,
+							"name": "key",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "K",
+								"refersToTypeParameter": true
+							}
+						},
+						{
+							"id": 34,
+							"name": "value",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "V",
+								"refersToTypeParameter": true
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 35,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"target": -1,
+								"name": "ValueType",
+								"refersToTypeParameter": true
+							}
+						],
+						"name": "ExistsReturn",
+						"package": "utilitrix"
+					}
+				}
+			]
+		},
+		{
 			"id": 4,
 			"name": "gigalog",
 			"variant": "declaration",
@@ -697,7 +931,8 @@
 				{
 					"fileName": "modules/misc/gigalog.ts",
 					"line": 31,
-					"character": 16
+					"character": 16,
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L31"
 				}
 			],
 			"signatures": [
@@ -730,7 +965,8 @@
 						{
 							"fileName": "modules/misc/gigalog.ts",
 							"line": 31,
-							"character": 16
+							"character": 16,
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/misc/gigalog.ts#L31"
 						}
 					],
 					"typeParameter": [
@@ -830,7 +1066,7 @@
 			]
 		},
 		{
-			"id": 27,
+			"id": 39,
 			"name": "isEven",
 			"variant": "declaration",
 			"kind": 64,
@@ -840,12 +1076,12 @@
 					"fileName": "modules/number/isEven.ts",
 					"line": 14,
 					"character": 16,
-					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/number/isEven.ts#L14"
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/number/isEven.ts#L14"
 				}
 			],
 			"signatures": [
 				{
-					"id": 28,
+					"id": 40,
 					"name": "isEven",
 					"variant": "signature",
 					"kind": 4096,
@@ -883,12 +1119,12 @@
 							"fileName": "modules/number/isEven.ts",
 							"line": 14,
 							"character": 16,
-							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/number/isEven.ts#L14"
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/number/isEven.ts#L14"
 						}
 					],
 					"parameters": [
 						{
-							"id": 29,
+							"id": 41,
 							"name": "number",
 							"variant": "param",
 							"kind": 32768,
@@ -925,7 +1161,7 @@
 					"fileName": "modules/array/pluck.ts",
 					"line": 41,
 					"character": 16,
-					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L41"
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L41"
 				}
 			],
 			"signatures": [
@@ -986,7 +1222,7 @@
 							"fileName": "modules/array/pluck.ts",
 							"line": 41,
 							"character": 16,
-							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/pluck.ts#L41"
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/pluck.ts#L41"
 						}
 					],
 					"typeParameter": [
@@ -1123,7 +1359,7 @@
 					"fileName": "modules/array/random.ts",
 					"line": 10,
 					"character": 16,
-					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/random.ts#L10"
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/random.ts#L10"
 				}
 			],
 			"signatures": [
@@ -1166,7 +1402,7 @@
 							"fileName": "modules/array/random.ts",
 							"line": 10,
 							"character": 16,
-							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/array/random.ts#L10"
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/array/random.ts#L10"
 						}
 					],
 					"typeParameter": [
@@ -1214,7 +1450,7 @@
 			]
 		},
 		{
-			"id": 30,
+			"id": 46,
 			"name": "titleCase",
 			"variant": "declaration",
 			"kind": 64,
@@ -1224,12 +1460,12 @@
 					"fileName": "modules/string/titleCase.ts",
 					"line": 10,
 					"character": 16,
-					"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/string/titleCase.ts#L10"
+					"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/string/titleCase.ts#L10"
 				}
 			],
 			"signatures": [
 				{
-					"id": 31,
+					"id": 47,
 					"name": "titleCase",
 					"variant": "signature",
 					"kind": 4096,
@@ -1267,12 +1503,12 @@
 							"fileName": "modules/string/titleCase.ts",
 							"line": 10,
 							"character": 16,
-							"url": "https://github.com/angelplusultra/utilitrix/blob/9ef2921/src/modules/string/titleCase.ts#L10"
+							"url": "https://github.com/angelplusultra/utilitrix/blob/29dd047/src/modules/string/titleCase.ts#L10"
 						}
 					],
 					"parameters": [
 						{
-							"id": 32,
+							"id": 48,
 							"name": "str",
 							"variant": "param",
 							"kind": 32768,
@@ -1297,12 +1533,80 @@
 					}
 				}
 			]
+		},
+		{
+			"id": 42,
+			"name": "totalize",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "modules/number/totalize.ts",
+					"line": 31,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 43,
+					"name": "totalize",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "modules/number/totalize.ts",
+							"line": 31,
+							"character": 16
+						}
+					],
+					"parameters": [
+						{
+							"id": 44,
+							"name": "nums",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						},
+						{
+							"id": 45,
+							"name": "opts",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "src/modules/number/totalize.ts",
+									"qualifiedName": "TotalizeOpts"
+								},
+								"name": "TotalizeOpts",
+								"package": "utilitrix"
+							},
+							"defaultValue": "..."
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			]
 		}
 	],
 	"groups": [
 		{
 			"title": "Interfaces",
 			"children": [
+				35,
 				9
 			]
 		},
@@ -1315,18 +1619,20 @@
 		{
 			"title": "Variables",
 			"children": [
-				33
+				49
 			]
 		},
 		{
 			"title": "Functions",
 			"children": [
 				1,
-				4,
 				27,
+				4,
+				39,
 				17,
 				13,
-				30
+				46,
+				42
 			]
 		}
 	],
@@ -1347,12 +1653,15 @@
 		{
 			"title": "Other",
 			"children": [
+				35,
 				23,
-				33,
+				49,
 				1,
 				27,
+				39,
 				13,
-				30
+				46,
+				42
 			]
 		}
 	],
@@ -1463,114 +1772,178 @@
 			"qualifiedName": "__type.__index"
 		},
 		"27": {
-			"sourceFileName": "src/modules/number/isEven.ts",
-			"qualifiedName": "isEven"
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "exists"
 		},
 		"28": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "exists"
+		},
+		"29": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "ValueType"
+		},
+		"30": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "K"
+		},
+		"31": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "V"
+		},
+		"32": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "array"
+		},
+		"33": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "key"
+		},
+		"34": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "value"
+		},
+		"35": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "ExistsReturn"
+		},
+		"36": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "ExistsReturn.element"
+		},
+		"37": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "ExistsReturn.exists"
+		},
+		"38": {
+			"sourceFileName": "src/modules/array/exists.ts",
+			"qualifiedName": "ExistsReturn.T"
+		},
+		"39": {
 			"sourceFileName": "src/modules/number/isEven.ts",
 			"qualifiedName": "isEven"
 		},
-		"29": {
+		"40": {
+			"sourceFileName": "src/modules/number/isEven.ts",
+			"qualifiedName": "isEven"
+		},
+		"41": {
 			"sourceFileName": "src/modules/number/isEven.ts",
 			"qualifiedName": "number"
 		},
-		"30": {
+		"42": {
+			"sourceFileName": "src/modules/number/totalize.ts",
+			"qualifiedName": "totalize"
+		},
+		"43": {
+			"sourceFileName": "src/modules/number/totalize.ts",
+			"qualifiedName": "totalize"
+		},
+		"44": {
+			"sourceFileName": "src/modules/number/totalize.ts",
+			"qualifiedName": "nums"
+		},
+		"45": {
+			"sourceFileName": "src/modules/number/totalize.ts",
+			"qualifiedName": "opts"
+		},
+		"46": {
 			"sourceFileName": "src/modules/string/titleCase.ts",
 			"qualifiedName": "titleCase"
 		},
-		"31": {
+		"47": {
 			"sourceFileName": "src/modules/string/titleCase.ts",
 			"qualifiedName": "titleCase"
 		},
-		"32": {
+		"48": {
 			"sourceFileName": "src/modules/string/titleCase.ts",
 			"qualifiedName": "str"
 		},
-		"33": {
+		"49": {
 			"sourceFileName": "src/modules/storage/index.ts",
 			"qualifiedName": "storage"
 		},
-		"34": {
-			"sourceFileName": "src/modules/storage/index.ts",
-			"qualifiedName": "__object"
-		},
-		"35": {
-			"sourceFileName": "src/modules/storage/index.ts",
-			"qualifiedName": "__object.local"
-		},
-		"36": {
-			"sourceFileName": "src/modules/storage/index.ts",
-			"qualifiedName": "__object"
-		},
-		"37": {
-			"sourceFileName": "src/modules/storage/index.ts",
-			"qualifiedName": "__object.get"
-		},
-		"38": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "get"
-		},
-		"39": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "get"
-		},
-		"40": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "ReturnValue"
-		},
-		"41": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "key"
-		},
-		"42": {
-			"sourceFileName": "src/modules/storage/index.ts",
-			"qualifiedName": "__object.set"
-		},
-		"43": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "set"
-		},
-		"44": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "set"
-		},
-		"45": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "T"
-		},
-		"46": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "key"
-		},
-		"47": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "value"
-		},
-		"48": {
-			"sourceFileName": "src/modules/storage/index.ts",
-			"qualifiedName": "__object.clear"
-		},
-		"49": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "clear"
-		},
 		"50": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "clear"
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object"
 		},
 		"51": {
 			"sourceFileName": "src/modules/storage/index.ts",
-			"qualifiedName": "__object.remove"
+			"qualifiedName": "__object.local"
 		},
 		"52": {
-			"sourceFileName": "src/modules/storage/localStorage.ts",
-			"qualifiedName": "remove"
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object"
 		},
 		"53": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.get"
+		},
+		"54": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "get"
+		},
+		"55": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "get"
+		},
+		"56": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "ReturnValue"
+		},
+		"57": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "key"
+		},
+		"58": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.set"
+		},
+		"59": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "set"
+		},
+		"60": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "set"
+		},
+		"61": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "T"
+		},
+		"62": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "key"
+		},
+		"63": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "value"
+		},
+		"64": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.clear"
+		},
+		"65": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "clear"
+		},
+		"66": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "clear"
+		},
+		"67": {
+			"sourceFileName": "src/modules/storage/index.ts",
+			"qualifiedName": "__object.remove"
+		},
+		"68": {
 			"sourceFileName": "src/modules/storage/localStorage.ts",
 			"qualifiedName": "remove"
 		},
-		"54": {
+		"69": {
+			"sourceFileName": "src/modules/storage/localStorage.ts",
+			"qualifiedName": "remove"
+		},
+		"70": {
 			"sourceFileName": "src/modules/storage/localStorage.ts",
 			"qualifiedName": "key"
 		}
